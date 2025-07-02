@@ -1,0 +1,53 @@
+A NVT simulation for heating
+ &cntrl
+    imin=0,         ! No minimization
+    irest=0,        ! This IS not a restart of an old MD simulation
+    ntx=1,          ! So our inpcrd file has no velocities
+
+    ! Temperature control
+    ntt=3,          ! Langevin dynamics
+    gamma_ln=1.0,   ! Friction coefficient (ps^-1)
+    tempi=10,        ! Initial temp -- give it some small random velocities
+    temp0=300,      ! Target temperature
+    ntb=1,          ! Periodic boundaries for constant volume
+
+    ! Potential energy control
+    cut=12.0,        ! Nonbonded cutoff, in Angstroms
+    fswitch=10.0,
+
+    ! MD settings
+    nstlim=5000000, 
+    dt=0.002,       ! time step (ps)
+
+    ! SHAKE
+    ntc=2,          ! Constrain bonds containing hydrogen
+    ntf=2,          ! Do not calculate forces of bonds containing hydrogen
+    tol=0.0000001,  ! SHAKE tolerance
+
+    ! Control how often information is printed
+    ntpr=1000000,    
+    ntwx=500000,     
+    ntwr=1000000,   
+    ntxo=1,         ! Restart file format =1 ASCII, =2 NetCDF format
+    ioutfm=1,       ! Trajectory file format =1 NetCDF format (always do this!), =2 ASCII
+
+    ! Wrap coordinates when printing them to the same unit cell
+    iwrap=0,        ! =0 wrap off, =1 wrap on
+
+    ! Restrain the solute
+    ntr=1,                       ! turn on restraint
+    restraint_wt=10,             ! harmonic restraints (10 kcal/molA²)
+    restraintmask=':1-480&!@H=', ! carb heavy atoms
+    nmropt=1,                    ! read in temperature control
+ /
+ &wt
+    type='TEMP0', istep1=0, istep2=5000000, value1=10.0, value2=300,
+ /
+ &wt
+    type='END',
+ /
+/
+
+                                                                                                                            45,0-1        Bot
+
+
