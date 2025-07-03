@@ -1,0 +1,3 @@
+parm ../stripped_nosalt.parm7
+trajin ../nosalt-nowat.nc
+surf run1 ':*&!@H=' out sasa_all.dat 
