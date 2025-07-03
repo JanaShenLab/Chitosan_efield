@@ -1,0 +1,31 @@
+parm ../stripped_nosalt.parm7
+trajin ../nosalt-nowat.nc 
+hbond N--O6 out nhb_fibril.dat angle 135 dist 3.5 donormask @N acceptormask @O6 nointramol  
+hbond O3--O3 out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @O3 nointramol 
+hbond O1--O3 out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @O1 nointramol 
+hbond N--O1 out nhb_fibril.dat angle 135 dist 3.5 donormask @N acceptormask @O1 nointramol 
+hbond N--O3 out nhb_fibril.dat angle 135 dist 3.5 donormask @N acceptormask @O3 nointramol 
+hbond N--O4 out nhb_fibril.dat angle 135 dist 3.5 donormask @N acceptormask @O4 nointramol 
+hbond O6--O6 out nhb_fibril.dat angle 135 dist 3.5 donormask @O6 acceptormask @O6 nointramol 
+hbond O1--O6 out nhb_fibril.dat angle 135 dist 3.5 donormask @O1 acceptormask @O6 nointramol 
+hbond N--O5 out nhb_fibril.dat angle 135 dist 3.5 donormask @N acceptormask @O5 nointramol
+hbond O3--O5 out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @O5 nointramol
+hbond O3--O1 out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @O1 nointramol
+hbond O6--O5 out nhb_fibril.dat angle 135 dist 3.5 donormask @O6 acceptormask @O5 nointramol
+hbond O4--O3 out nhb_fibril.dat angle 135 dist 3.5 donormask @O4 acceptormask @O3 nointramol
+hbond O6--O3 out nhb_fibril.dat angle 135 dist 3.5 donormask @O6 acceptormask @O3 nointramol
+hbond O6--O1 out nhb_fibril.dat angle 135 dist 3.5 donormask @O6 acceptormask @O1 nointramol
+hbond O6--O4 out nhb_fibril.dat angle 135 dist 3.5 donormask @O6 acceptormask @O4 nointramol
+hbond O3--O6 out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @O6 nointramol
+hbond O1--O4 out nhb_fibril.dat angle 135 dist 3.5 donormask @O1 acceptormask @O4 nointramol
+hbond O1--O5 out nhb_fibril.dat angle 135 dist 3.5 donormask @O1 acceptormask @O5 nointramol
+hbond O4--O6 out nhb_fibril.dat angle 135 dist 3.5 donormask @O4 acceptormask @O6 nointramol
+hbond O4--O1 out nhb_fibril.dat angle 135 dist 3.5 donormask @O4 acceptormask @O1 nointramol
+hbond O3--O4 out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @O4 nointramol
+hbond O6--N out nhb_fibril.dat angle 135 dist 3.5 donormask @O6 acceptormask @N nointramol 
+hbond O3--N out nhb_fibril.dat angle 135 dist 3.5 donormask @O3 acceptormask @N nointramol  
+hbond O1--N out nhb_fibril.dat angle 135 dist 3.5 donormask @O1 acceptormask @N nointramol
+run
+
+
+

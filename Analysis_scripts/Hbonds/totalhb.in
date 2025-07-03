@@ -1,0 +1,5 @@
+parm ../stripped.nosalt.parm7
+trajin ../nosalt-nowat.nc
+
+hbond totalhbonds out totalhbonds.dat angle 135 dist 3.5 image
+hbond interhbonds out interhbonds.dat angle 135 dist 3.5 nointramol image
